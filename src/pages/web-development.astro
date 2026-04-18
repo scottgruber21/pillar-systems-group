@@ -1,0 +1,117 @@
+---
+// src/pages/web-development.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// 1. Define the specific CTA for the Web Development page
+const customCta = {
+  headline: "Stop letting a slow website throttle your business.",
+  subheadline: "Let's review your current architecture and build a zero-bloat platform that actually converts.",
+  buttonText: "Get a Technical Review",
+  buttonLink: "/contact?service=web-dev" 
+};
+---
+
+<BaseLayout title="High-Speed Web Development | Pillar Systems Group" cta={customCta}>
+  
+  <section class="bg-brand-navy pt-32 pb-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-cyan/10 blur-[100px] rounded-full"></div>
+    
+    <div class="container mx-auto px-4 max-w-4xl text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan font-bold text-sm uppercase tracking-wider mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+        Web Development Systems
+      </div>
+      <h1 class="font-heading text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+        Your Website Should Be an <span class="text-brand-cyan">Engine</span>, Not a Brochure.
+      </h1>
+      <p class="font-sans text-xl text-brand-light/80 leading-relaxed max-w-2xl mx-auto text-balance">
+        We engineer zero-bloat, lightning-fast digital platforms. When your site loads instantly, Google ranks you higher and your customers actually convert.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white border-b border-brand-gray/10">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-heading text-3xl font-bold text-brand-navy mb-6">The "Pretty Website" Trap</h2>
+          <p class="font-sans text-brand-gray text-lg leading-relaxed mb-6">
+            Most local businesses are sold heavy, bloated templates that take forever to load on a mobile phone. They might look nice, but behind the scenes, they are actively driving customers away.
+          </p>
+          <ul class="space-y-4 font-sans text-brand-navy font-medium">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>Slow load times tank your local search rankings.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>Mobile users abandon sites that take more than 3 seconds to load.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>Clunky code makes adding tracking and analytics a nightmare.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-brand-light p-8 rounded-2xl border border-brand-gray/20 shadow-inner relative">
+           <div class="flex gap-2 mb-6">
+             <div class="w-3 h-3 rounded-full bg-brand-gray/30"></div>
+             <div class="w-3 h-3 rounded-full bg-brand-gray/30"></div>
+             <div class="w-3 h-3 rounded-full bg-brand-gray/30"></div>
+           </div>
+           <h3 class="font-heading text-xl font-bold text-brand-navy mb-4">Our Architecture is Different.</h3>
+           <p class="font-sans text-brand-gray leading-relaxed mb-6">
+             At Pillar Systems Group, we build on modern static-site generators and ship <strong>zero unnecessary JavaScript</strong> to the browser. The result? Perfect performance scores and frictionless user experiences.
+           </p>
+           <div class="flex items-center gap-4 bg-white p-4 rounded-lg shadow-sm border border-brand-gray/10">
+             <div class="text-4xl font-extrabold text-brand-cyan">99+</div>
+             <div class="font-sans text-sm text-brand-navy font-bold leading-tight">Google Core Web Vitals<br/><span class="text-brand-gray font-normal">Target Performance Score</span></div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-brand-light">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-brand-navy mb-4">Built from the Ground Up.</h2>
+        <p class="font-sans text-brand-gray text-lg">We don't use shortcut templates. Every system is engineered to support your specific business goals.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray/10 hover:border-brand-cyan transition-colors">
+          <div class="w-12 h-12 bg-brand-navy/5 text-brand-cyan rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-brand-navy mb-3">Mobile-First Engineering</h3>
+          <p class="font-sans text-brand-gray leading-relaxed">
+            Over 60% of local searches happen on a phone. Your site will be flawlessly responsive, ensuring contact buttons and service menus are always a thumb-tap away.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray/10 hover:border-brand-cyan transition-colors">
+          <div class="w-12 h-12 bg-brand-navy/5 text-brand-cyan rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-brand-navy mb-3">Technical SEO Baked In</h3>
+          <p class="font-sans text-brand-gray leading-relaxed">
+            We write clean, semantic HTML. Schema markup, optimized meta tags, and logical heading structures are included by default, giving you an immediate advantage in search.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray/10 hover:border-brand-cyan transition-colors">
+          <div class="w-12 h-12 bg-brand-navy/5 text-brand-cyan rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" /></svg>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-brand-navy mb-3">Conversion Focused</h3>
+          <p class="font-sans text-brand-gray leading-relaxed">
+            Traffic means nothing without leads. We design high-contrast calls to action, frictionless contact forms, and logical user journeys that guide visitors toward becoming clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

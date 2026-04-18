@@ -1,0 +1,126 @@
+---
+// src/pages/seo.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// 1. Define the specific CTA for the SEO page
+const customCta = {
+  headline: "Is your business invisible in local search?",
+  subheadline: "We'll run a deep-dive audit of your local rankings and map out a path to the top of local search results.",
+  buttonText: "Request a Visibility Audit",
+  buttonLink: "/contact?service=seo" 
+};
+---
+
+<BaseLayout title="Local SEO & Search Dominance | Pillar Systems Group" cta={customCta}>
+  
+  <section class="bg-brand-navy pt-32 pb-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-cyan/10 blur-[100px] rounded-full"></div>
+    
+    <div class="container mx-auto px-4 max-w-4xl text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan font-bold text-sm uppercase tracking-wider mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        Local Visibility Systems
+      </div>
+      <h1 class="font-heading text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+        Stop Hiding on <span class="text-brand-cyan">Page Two</span> of Google.
+      </h1>
+      <p class="font-sans text-xl text-brand-light/80 leading-relaxed max-w-2xl mx-auto text-balance">
+        Search visibility is the lifeblood of local business. We don't just "do SEO"—we engineer authority so your neighbors find you before they find your competitors.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white border-b border-brand-gray/10">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+           <div class="bg-brand-navy p-8 rounded-2xl border border-brand-gray/20 shadow-xl relative overflow-hidden">
+             <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-brand-cyan/10 rounded-full border border-brand-cyan/20"></div>
+             <div class="absolute -right-20 -bottom-20 w-60 h-60 bg-brand-cyan/5 rounded-full border border-brand-cyan/10"></div>
+             
+             <h3 class="font-heading text-xl font-bold text-white mb-4 relative z-10">The Local Radius Problem</h3>
+             <p class="font-sans text-brand-light/70 leading-relaxed mb-6 relative z-10">
+               Google prioritizes proximity, relevance, and prominence. If your business isn't optimized for your specific service area, you're losing leads to competitors who are simply "louder" in Google's ears.
+             </p>
+             <div class="space-y-3 relative z-10">
+               <div class="flex items-center gap-3 bg-white/5 p-3 rounded border border-white/10">
+                 <div class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></div>
+                 <span class="text-sm font-bold text-brand-light">Optimized Google Business Profile</span>
+               </div>
+               <div class="flex items-center gap-3 bg-white/5 p-3 rounded border border-white/10">
+                 <div class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></div>
+                 <span class="text-sm font-bold text-brand-light">Localized Content Strategy</span>
+               </div>
+               <div class="flex items-center gap-3 bg-white/5 p-3 rounded border border-white/10">
+                 <div class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></div>
+                 <span class="text-sm font-bold text-brand-light">High-Authority Local Citations</span>
+               </div>
+             </div>
+           </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="font-heading text-3xl font-bold text-brand-navy mb-6">Visibility is the New Currency</h2>
+          <p class="font-sans text-brand-gray text-lg leading-relaxed mb-6">
+            97% of people learn more about a local company online than anywhere else. If you aren't showing up in the "Local Map Pack," you are essentially invisible to your target market.
+          </p>
+          <ul class="space-y-4 font-sans text-brand-navy font-medium">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-brand-cyan shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>Dominate Somerset County and surrounding NJ service areas.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-brand-cyan shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>Capture intent-driven traffic that is ready to buy now.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-brand-cyan shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span>Build long-term authority that outlasts expensive ad campaigns.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-brand-light">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-brand-navy mb-4">A Scientific Approach to Ranking.</h2>
+        <p class="font-sans text-brand-gray text-lg">We use a data-driven system to move the needle, focusing on three core pillars of search authority.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray/10">
+          <h3 class="font-heading text-xl font-bold text-brand-navy mb-4 flex items-center gap-3">
+            <span class="text-brand-cyan text-2xl">01</span>
+            Technical Health
+          </h3>
+          <p class="font-sans text-brand-gray leading-relaxed">
+            Google won't rank a site it can't crawl. We optimize your site's structure, speed, and schema markup to ensure search engines can easily index and understand your content.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray/10">
+          <h3 class="font-heading text-xl font-bold text-brand-navy mb-4 flex items-center gap-3">
+            <span class="text-brand-cyan text-2xl">02</span>
+            Local Relevance
+          </h3>
+          <p class="font-sans text-brand-gray leading-relaxed">
+            We manage your local citations and Google Business Profile to build "Geographic Authority." We make sure Google knows exactly where you are and who you serve.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray/10">
+          <h3 class="font-heading text-xl font-bold text-brand-navy mb-4 flex items-center gap-3">
+            <span class="text-brand-cyan text-2xl">03</span>
+            Content Strategy
+          </h3>
+          <p class="font-sans text-brand-gray leading-relaxed">
+            We use a Hub and Spoke model to create expert content that answers the specific questions your potential customers are asking, positioning you as the local leader.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

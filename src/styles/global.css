@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0C2038;
+  --color-brand-cyan: #00D1FF;
+  --color-brand-gray: #5C7080;
+  --color-brand-light: #F8FAFC;
+}
+
+/* Custom utility for the technical background pattern */
+@utility bg-grid-pattern {
+  background-image: radial-gradient(var(--color-brand-cyan) 1px, transparent 1px);
+  background-size: 30px 30px;
+  mask-image: linear-gradient(to bottom, white, transparent);
+}
