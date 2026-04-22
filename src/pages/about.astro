@@ -1,0 +1,114 @@
+---
+// src/pages/about.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// 1. Define the specific CTA for the About page
+const customCta = {
+  headline: "Ready to meet your new technical partner?",
+  subheadline: "Let's schedule a brief, no-pressure introduction to discuss your current setup and where you want to take your business.",
+  buttonText: "Let's Talk Systems",
+  buttonLink: "/contact" 
+};
+---
+
+<BaseLayout title="About Us | Pillar Systems Group" cta={customCta}>
+  
+  <section class="bg-brand-navy pt-32 pb-20 relative overflow-hidden border-b border-brand-cyan/20">
+    <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-cyan/10 blur-[100px] rounded-full"></div>
+    
+    <div class="container mx-auto px-4 max-w-4xl text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan font-bold text-sm uppercase tracking-wider mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+        The Pillar Philosophy
+      </div>
+      <h1 class="font-heading text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+        Built on <span class="text-brand-cyan">Performance.</span><br/>Rooted in New Jersey.
+      </h1>
+      <p class="font-sans text-xl text-brand-light/80 leading-relaxed max-w-2xl mx-auto text-balance">
+        We started Pillar Systems Group with a single goal: to stop local businesses from being held hostage by slow, bloated, and ineffective digital marketing.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white border-b border-brand-gray/10">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="font-heading text-3xl font-bold text-brand-navy mb-6">The Industry is Broken.</h2>
+          <div class="space-y-6 text-brand-gray">
+            <p>
+              For years, local business owners have been sold a lie. Agencies charge exorbitant retainers for generic WordPress templates that take agonizing seconds to load on a mobile phone. They sell "vanity metrics" like impressions instead of tracking actual revenue and phone calls.
+            </p>
+            <p>
+              When your site is slow, Google penalizes you. When your tracking is broken, you are burning ad spend in the dark. 
+            </p>
+            <p class="font-bold text-brand-navy">
+              Pillar Systems Group was built to be the antidote.
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="bg-brand-light p-6 rounded-xl border border-brand-gray/10">
+            <div class="w-10 h-10 bg-brand-cyan/10 text-brand-cyan rounded flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            </div>
+            <h3 class="font-heading font-bold text-brand-navy mb-2">Zero Bloat</h3>
+            <p class="text-sm text-brand-gray">We engineer clean, modern architecture that loads instantly and passes Google's Core Web Vitals with flying colors.</p>
+          </div>
+          <div class="bg-brand-light p-6 rounded-xl border border-brand-gray/10">
+            <div class="w-10 h-10 bg-brand-cyan/10 text-brand-cyan rounded flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            </div>
+            <h3 class="font-heading font-bold text-brand-navy mb-2">Hard Data</h3>
+            <p class="text-sm text-brand-gray">No more guessing. We install rigorous tracking systems so you know exactly which campaigns are generating leads.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-brand-light relative">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="bg-white rounded-3xl shadow-xl border border-brand-gray/10 overflow-hidden flex flex-col md:flex-row">
+        
+        <div class="md:w-2/5 bg-brand-navy p-10 relative flex items-center justify-center min-h-[300px]">
+          <div class="absolute inset-0 bg-grid-pattern opacity-20"></div>
+          <div class="relative z-10 text-center">
+            <div class="w-24 h-24 mx-auto bg-brand-cyan/10 rounded-full flex items-center justify-center border border-brand-cyan/30 mb-6">
+              <svg class="w-10 h-10 text-brand-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+            </div>
+            <h3 class="font-heading text-2xl font-bold text-white mb-1">Scott Gruber</h3>
+            <p class="text-brand-cyan font-sans text-sm tracking-widest uppercase font-bold">Founder & Lead Architect</p>
+          </div>
+        </div>
+
+        <div class="md:w-3/5 p-10 lg:p-14">
+          <h2 class="font-heading text-3xl font-bold text-brand-navy mb-6">Bridging the gap between content and code.</h2>
+          <div class="space-y-5 text-brand-gray font-sans">
+            <p>
+              I launched Pillar Systems Group right here in Manville, NJ, to give local service businesses access to the same digital architecture utilized by enterprise brands. 
+            </p>
+            <p>
+              My background is an unconventional mix that perfectly serves modern SEO. With a degree in Journalism and Political Science from Rutgers University, I understand that high-ranking content isn't just about stuffing keywords onto a page—it's about crafting compelling narratives that engage your audience and answer their exact questions.
+            </p>
+            <p>
+              But modern visibility requires serious technical horsepower. In my career as a Marketing Systems Manager, I oversaw the infrastructure that proves marketing ROI. I've engineered massive data migrations using rigorous API scripts and built the tracking pipelines that connect website clicks to actual revenue. 
+            </p>
+            <p>
+              That is the DNA of Pillar Systems Group. We don't just write great copy, and we don't just write clean code. We build integrated systems that capture your local market.
+            </p>
+          </div>
+          
+          <div class="mt-10 pt-8 border-t border-brand-gray/10 flex items-center gap-4">
+            <span class="font-heading font-bold text-brand-navy uppercase tracking-wider text-sm">Proudly Serving:</span>
+            <span class="bg-brand-cyan/10 text-brand-navy font-bold px-4 py-2 rounded text-sm">Somerset County & Central NJ</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

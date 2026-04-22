@@ -13,3 +13,11 @@
   background-size: 30px 30px;
   mask-image: linear-gradient(to bottom, white, transparent);
 }
+
+p{
+  font-size: 1.3rem!important;
+}
+
+ul li span{
+   font-size: 1.2rem;
+}
